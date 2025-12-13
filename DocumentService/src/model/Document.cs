@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DocumentService.src.model
-{
-   using System;
 
 namespace DocumentsService.src.Model
 {
@@ -64,5 +61,4 @@ namespace DocumentsService.src.Model
         /// </summary>
         public DateTime? DeletedAt { get; set; }
     }
-}
 }
