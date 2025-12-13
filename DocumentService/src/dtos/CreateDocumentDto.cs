@@ -21,7 +21,6 @@ namespace DocumentService.src.dtos
         /// Título del documento
         /// </summary>
         [Required(ErrorMessage = "Title is required")]
-        [StringLength(200, ErrorMessage = "Title cannot exceed 200 characters")]
         public required string Title { get; set; }
 
         /// <summary>
@@ -37,7 +36,7 @@ namespace DocumentService.src.dtos
         /// <summary>
         /// ID del usuario que crea el documento
         /// </summary>
-        [Required(ErrorMessage = "Created by user ID is required")]
+        [Required(ErrorMessage = "User ID is missing")]
         public required string CreatedByUserId { get; set; }
     }
 }

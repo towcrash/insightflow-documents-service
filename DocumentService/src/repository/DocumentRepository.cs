@@ -121,7 +121,6 @@ namespace DocumentService.src.repository
             lock (_lock)
             {
                 var documents = _documents
-                    .Where(d => d.IsActive)
                     .OrderByDescending(d => d.UpdatedAt)
                     .ToList();
                 return Task.FromResult(documents);
