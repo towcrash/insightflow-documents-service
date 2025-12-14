@@ -96,19 +96,12 @@ Almacenamiento: In-Memory List
     cd insightflow-documents-service
     cd DocumentService
     ```
-
-2. **Configurar Variables de Entorno (Opcional)**:
-    Puedes crear un archivo `.env` en la raíz del proyecto si necesitas configuraciones personalizadas:
-    ```
-    ASPNETCORE_ENVIRONMENT=Development
-    ```
-
-3. **Instalar Dependencias**:
+2. **Instalar Dependencias**:
     ```bash
     dotnet restore
     ```
 
-4. **Ejecutar el Proyecto**:
+3. **Ejecutar el Proyecto**:
     ```bash
     dotnet run
     ```
